@@ -2,159 +2,35 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-#heroGrid {
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  height: 70vh;
-  grid-template-rows: 75% 25%;
-  grid-template-columns: 75% 25%;
-  grid-template-areas:
-  "homepageHero homepageHero"
-  "homepageHero CTA";
-}
-
-#homepageHero {
-  grid-area: heroGrid;
-  background-image: url("../images/Anne-hero.jpg");
-  width: 1920px;;
-  height: 1080px;
-  align-content: left;
-}
-
-#headline {
-  background-color: rgba(255,255,255,0.8);
-  border-bottom: 5px solid #FF6200;
-  position: absolute;
-  right: -50px;
-  top: 100px;
-  padding: 25px;
-  max-width: 550px;
-  z-index: 100;
-}
-
-.heroGridArea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
+.navBar {
   display: flex;
-  position: relative;
+  align-self: center;
+  justify-content: space-between;
 }
-
-
-.subHeading {
+.navItem {
+  padding-top: 20px;
+}
+h1 {
   text-align: center;
-  border-bottom: 2px solid black;
-  width: 300px;
-  margin: 50px auto;
+  font-size: 48px;
+  line-height: 58px;
 }
-
-#hero {
-  grid-area: auto;
-  max-width: fit-content;
-  height: 500px;
-  background-image: url("../images/Anne-hero.jpg");
-
-}
-
-.categoryGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
-}
-
-.heading {
-  background-color: rgba(0,0,0,0.7);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  border-bottom: 5px solid #FF6200;
-}
-
-
-#navBar {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 5%;
-  font-weight: 500;
-  justify-content: space-between;
-}
-#navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#navigation p {
-  cursor: pointer;
+.navLink {
+  padding: 10px;
+  letter-spacing: 1px;
+  color: black;
   text-decoration: none;
 }
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
+.navLink:hover{
+  color:#666666;
 }
-.icons img {
-  margin: 15px;
-  cursor: pointer;
-}
-.highlight {
-  color: #FF6200;
-  font-weight: 700;
-}
-
-/* Typography CSS */
-
-h2 {
-  font-size: 60px;
-  margin: 0px 0px;
-  color: #FF6200;
-}
-
 h3 {
-  font-size: 32px;
-  font-weight: 300;
-  margin: 0px 0px;
+  text-align: center;
 }
-
-h4 {
-  color: white;
-  font-weight: 400;
-  font-size: 22px;
+.CaseStudy {
+  display:flex;
+  justify-content: center;
 }
-
-
-#headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px 0px;
-  color: #636364;
-}
-
-@media only screen and (max-width: 1000px) {
-  #navigation {
-    display: none;
-  }
-  .icons {
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
-  #heroGrid {
-    grid-template-areas:
-    "homepageHero homepageHero"
-    "homepageHero CTA";
-  }
+.card:hover {
+  background-color: blue;
 }
